@@ -1,0 +1,47 @@
+[
+  {
+    "proprietario_nome": "Proprietário Particular",
+    "portal_origem": "OLX",
+    "bairro": "Vila Prudente",
+    "codigo_anuncio": "1531133017",
+    "whatsapp_numero": "11900000000",
+    "status_funil_sugerido": "Captado",
+    "action_fallback_txt": "Proprietário Particular;OLX;Vila Prudente;1531133017"
+  },
+  {
+    "proprietario_nome": "Proprietário Particular",
+    "portal_origem": "OLX",
+    "bairro": "Vila Prudente",
+    "codigo_anuncio": "1522865632",
+    "whatsapp_numero": "11900000000",
+    "status_funil_sugerido": "Captado",
+    "action_fallback_txt": "Proprietário Particular;OLX;Vila Prudente;1522865632"
+  },
+  {
+    "proprietario_nome": "Proprietário Particular",
+    "portal_origem": "OLX",
+    "bairro": "Vila Prudente",
+    "codigo_anuncio": "1531052173",
+    "whatsapp_numero": "11900000000",
+    "status_funil_sugerido": "Captado",
+    "action_fallback_txt": "Proprietário Particular;OLX;Vila Prudente;1531052173"
+  },
+  {
+    "proprietario_nome": "Proprietário Particular",
+    "portal_origem": "OLX",
+    "bairro": "Vila Prudente",
+    "codigo_anuncio": "1531051244",
+    "whatsapp_numero": "11900000000",
+    "status_funil_sugerido": "Captado",
+    "action_fallback_txt": "Proprietário Particular;OLX;Vila Prudente;1531051244"
+  },
+  {
+    "proprietario_nome": "Proprietário Particular",
+    "portal_origem": "OLX",
+    "bairro": "Vila Prudente",
+    "codigo_anuncio": "1531010421",
+    "whatsapp_numero": "11900000000",
+    "status_funil_sugerido": "Captado",
+    "action_fallback_txt": "Proprietário Particular;OLX;Vila Prudente;1531010421"
+  }
+]
