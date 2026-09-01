@@ -7,7 +7,7 @@ from google import genai
 # ==============================================================================
 # ⚠️ CONFIGURAÇÃO: INSIRA SUA CHAVE DA GEMINI API ABAIXO (Inicia com AIza)
 # ==============================================================================
-API_KEY_GEMINI = "CHAVE_REMOVIDA"
+API_KEY_GEMINI = "SUA_CHAVE_AQUI"
 client = genai.Client(api_key=API_KEY_GEMINI)
 
 async def capturar_anuncios_olx():
@@ -49,7 +49,7 @@ async def capturar_anuncios_olx():
                 try:
                     print(f"👉 Processando imóvel ID: {codigo_real}")
                     nome = "Proprietário Particular"
-                    whats = "11900000000" # Seu número padrão do teste
+                    whats = "11999998899" # Seu número padrão do teste
                     
                     try:
                         # Tenta rodar a análise cognitiva da IA do Gemini
@@ -69,7 +69,7 @@ async def capturar_anuncios_olx():
                         )
                         dados_ia = json.loads(response.text.strip().replace("```json", "").replace("```", ""))
                         nome = dados_ia.get("proprietario_nome", "Proprietário Particular")
-                        whats = dados_ia.get("whatsapp_numero", "11900000000")
+                        whats = dados_ia.get("whatsapp_numero", "11999998899")
                     except Exception as e:
                         # 🛡️ CONTINGÊNCIA ATIVA LOCAL: Se der erro de créditos (429), estrutura os dados reais via Python local
                         print(f"ℹ️ Processando ID {codigo_real} via motor local estruturado (Gemini fora de saldo).")

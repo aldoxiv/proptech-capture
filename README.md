@@ -2,6 +2,8 @@
 
 O **PropTech Capture** é um ecossistema automatizado de mineração de leads imobiliários focado na identificação de imóveis anunciados diretamente por **Proprietários Particulares** na OLX (região da Vila Prudente, SP). O objetivo principal é abastecer corretores parceiros com dados quentes estruturados para posterior registro e agenciamento na plataforma **QuintoAndar**.
 
+![](protech-capture-capa.png "PropTech Capture")
+
 ---
 
 ## 🏗️ Arquitetura do Sistema e Fluxo de Dados
@@ -114,7 +116,7 @@ async def capturar_anuncios_olx():
                         )
                         dados_ia = json.loads(response.text.strip().replace("```json", "").replace("```", ""))
                         nome = dados_ia.get("proprietario_nome", "Proprietário Particular")
-                        whats = dados_ia.get("whatsapp_numero", "11900000000")
+                        whats = dados_ia.get("whatsapp_numero", "11999961234")
                     except Exception as e:
                         # 🛡️ CONTINGÊNCIA ATIVA LOCAL: Se der erro de créditos (429), estrutura os dados reais via Python local
                         print(f"ℹ️ Processando ID {codigo_real} via motor local estruturado (Gemini fora de saldo).")
