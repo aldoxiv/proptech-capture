@@ -9,8 +9,8 @@ CORS(app, resources={r"/api/*": {"origins": "*"}})
 
 @app.route('/api/imoveis', methods=['GET'])
 def obter_imoveis():
-    if os.path.exists("imoveis.json"):
-        with open("imoveis.json", "r", encoding="utf-8") as f:
+    if os.path.exists("imoveis.exemplo.json"):
+        with open("imoveis.exemplo.json", "r", encoding="utf-8") as f:
             dados = json.load(f)
         return jsonify(dados)
     return jsonify([])

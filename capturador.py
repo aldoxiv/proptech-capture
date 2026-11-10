@@ -93,9 +93,9 @@ async def capturar_anuncios_olx():
     except Exception as e:
         print(f"❌ Erro crítico: {e}")
 
-    with open("imoveis.json", "w", encoding="utf-8") as f:
+    with open("imoveis.exemplo.json", "w", encoding="utf-8") as f:
         json.dump(imoveis_estruturados, f, indent=2, ensure_ascii=False)
-    print(f"💾 Arquivo imoveis.json atualizado em disco! ({len(imoveis_estruturados)} cadastrados reais)")
+    print(f"💾 Arquivo imoveis.exemplo.json atualizado em disco! ({len(imoveis_estruturados)} cadastrados reais)")
 
 if __name__ == "__main__":
     asyncio.run(capturar_anuncios_olx())

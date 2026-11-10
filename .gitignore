@@ -21,3 +21,18 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# segredos
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Playwright (sessões e cookies de login)
+playwright/.auth/
+*.storage.json
